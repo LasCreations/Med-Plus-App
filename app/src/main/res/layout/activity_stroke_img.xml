@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25FDF6"
+    android:orientation="vertical"
+    tools:context=".StrokeImg">
+
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20sp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtstroke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STROKE"
+            android:textColor="#000"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo"
+            android:layout_width="89dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/txtsteps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtstroke"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="120dp"
+            android:text="IMAGE"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/strokeimg"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

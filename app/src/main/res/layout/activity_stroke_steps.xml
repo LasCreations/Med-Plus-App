@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25FDF6"
+    android:orientation="vertical"
+    tools:context=".StrokeSteps">
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20sp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtstroke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STROKE"
+            android:textColor="#000"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo"
+            android:layout_width="89dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/txtsteps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtstroke"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="120dp"
+            android:text="Steps"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/txtfirststep"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txtsteps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STEP 1 - Call 911 immediately."
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/txtsecondstep"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txtfirststep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STEP 2 -Note the time you first see symptoms"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/txtthirdstep"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txtsecondstep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STEP 3 - Perform CPR, if necessary"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25FDF6"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context=".Sprain">
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20sp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtsprain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SPRAIN"
+            android:textColor="#000"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/txtsymptoms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtsprain"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="120dp"
+            android:text="Symptoms"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/txtfirstsymp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txtsymptoms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Pain."
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/txtsecondsymp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txtfirstsymp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Swelling."
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtthirdsymp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txtsecondsymp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Bruising."
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtfourthsymp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txtthirdsymp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Limited ability to move the affected joint."
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtfifthsymp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txtfourthsymp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Hearing or feeling a pop in your joint at the time of injury."
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtselect"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txtfifthsymp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT THE FORM IN WHICH YOU WANT YOUR INSTRUCTIONS"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo"
+            android:layout_width="89dp"
+            android:layout_height="50dp"/>
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:columnCount="2"
+        android:padding="15dp"
+        android:rowCount="1"
+        android:background="@drawable/backgroundinjuries">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/selectimg"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="10dp"
+            android:elevation="6dp"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Images"
+                    android:textAllCaps="true"
+                    android:textSize="10dp"
+                    android:textColor="#000"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/selectsteps"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="10dp"
+            android:elevation="4dp"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="steps"
+                    android:textAllCaps="true"
+                    android:textSize="10dp"
+                    android:textColor="#000"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+
+</LinearLayout>
